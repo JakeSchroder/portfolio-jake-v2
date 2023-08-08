@@ -25,7 +25,7 @@ export default function ProjectShowcase(props:DefaultProps){
                         />
                     </a>
                 </div>
-                <a className=" select-none sm:w-3/4" href={props.url}>
+                <a className=" select-none sm:w-3/4 md:w-3/4" href={props.url}>
                     <Image
                     className=" rounded-md shadow-xl sm:shadow-2xl"
                     src={props.image_src}
