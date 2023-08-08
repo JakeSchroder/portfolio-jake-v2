@@ -28,6 +28,7 @@ export default function Body(){
                 <h1 className=" text-8xl sm:text-3xl md:text-6xl text-center">Hello, I'm <b className="hover:text-gradient ">Jake Schroder,</b></h1>
                 <h1 className=" text-8xl sm:text-3xl md:text-6xl text-center font-bold hover:text-gradient">Fullstack Developer</h1>
             </div>
+            <div className=" [&>*:nth-child(even)]:bg-neutral-50">
             {
                 projects.map((project, index) => <ProjectShowcase 
                     name={project.name} 
@@ -38,6 +39,7 @@ export default function Body(){
                 />
                 )
             }
+            </div>
             <CertificationShowcase/>
         </div>
     )
