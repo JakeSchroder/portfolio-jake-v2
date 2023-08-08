@@ -4,11 +4,11 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 255, 255, 255;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -24,4 +24,22 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+@layer components {
+  .btn-nav {
+    @apply font-normal text-lg select-none underline-offset-4 hover:underline sm:text-base sm:font-semibold md:font-semibold
+  }
+  .text-gradient{
+    @apply transition duration-700 bg-gradient-to-r from-indigo-400 via-rose-300 to-cyan-400 bg-clip-text text-transparent
+  }
+  .swiper{
+    @apply relative justify-center items-center w-[792px] h-[612px] bg-transparent sm:w-3/4 sm:h-fit
+  }
+  .swiper-slider {
+    @apply flex items-center justify-center rounded-md bg-transparent select-none
+  }
+  html{
+    @apply selection:bg-text selection:text-background
+  }
 }
