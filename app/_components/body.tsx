@@ -34,6 +34,7 @@ export default function Body(){
                     image_src={project.image_src} 
                     url={project.url} 
                     github={project.github}
+                    key={index}
                 />
                 )
             }
