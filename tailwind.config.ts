@@ -42,6 +42,12 @@ const config: Config = {
         '2xl': { min: '1536px' },
         // => @media (min-width: 1536px) { ... }
       },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-6deg)' },
+          '50%': { transform: 'rotate(6deg)' },
+        }
+      },
     },
   },
   plugins: [],
