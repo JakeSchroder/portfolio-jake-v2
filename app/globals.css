@@ -40,6 +40,6 @@ body {
     @apply flex items-center justify-center rounded-md bg-transparent select-none
   }
   html{
-    @apply selection:bg-text selection:text-background animate-[fadeIn_2s_ease-in]
+    @apply selection:bg-text selection:text-background animate-[fadeIn_1.5s_ease-in]
   }
 }
