@@ -34,7 +34,7 @@ body {
     @apply transition duration-700 bg-gradient-to-r from-indigo-400 via-rose-300 to-cyan-400 bg-clip-text text-transparent
   }
   .swiper{
-    @apply relative justify-center items-center w-[792px] h-[612px] bg-transparent sm:w-3/4 sm:h-fit
+    @apply relative justify-center items-center w-[792px] h-[612px] bg-transparent sm:w-8/12 sm:h-fit md:w-3/4 md:h-fit
   }
   .swiper-slider {
     @apply flex items-center justify-center rounded-md bg-transparent select-none

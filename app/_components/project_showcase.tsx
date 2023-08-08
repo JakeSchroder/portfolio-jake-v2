@@ -17,6 +17,7 @@ export default function ProjectShowcase(props:DefaultProps){
                     <a className=" text-lg text-sky-600 underline-offset-4 hover:underline" href={props.url}>Demo</a>
                     <a href={props.github}>
                         <Image
+                        className="hover:animate-[wiggle_1s_ease-in-out_infinite]"
                         src="/github.svg"
                         alt="Github Logo"
                         width={30}
@@ -25,9 +26,9 @@ export default function ProjectShowcase(props:DefaultProps){
                         />
                     </a>
                 </div>
-                <a className=" select-none sm:w-3/4" href={props.url}>
+                <a className=" select-none sm:w-3/4 md:w-3/4" href={props.url}>
                     <Image
-                    className=" rounded-md shadow-xl sm:shadow-2xl"
+                    className=" rounded-md shadow-xl sm:shadow-2xl "
                     src={props.image_src}
                     alt={props.name}
                     width={1400}
