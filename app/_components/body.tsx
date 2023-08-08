@@ -17,7 +17,7 @@ const projects = [
     {
         name: 'Portfolio-V1',
         image_src: '/portfolio-v1-site.png',
-        url: '',
+        url: 'https://portfolio-jake-jakeschroder.vercel.app/',
         github: 'https://github.com/JakeSchroder/portfolio-jake'
     }
 ]
