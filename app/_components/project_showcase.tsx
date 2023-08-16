@@ -20,7 +20,7 @@ const projects = [
         image_src: '/portfolio-v1-site.png',
         url: 'https://portfolio-jake-jakeschroder.vercel.app/',
         github: 'https://github.com/JakeSchroder/portfolio-jake',
-        description: 'My first portfolio website. I hope this one feels a bit better!'
+        description: 'My first portfolio website. I hope this new one feels a bit better!'
     }
 ]
 export default function ProjectShowcase(){ 
