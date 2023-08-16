@@ -7,13 +7,16 @@ interface DefaultProps{
     github: string,
 }
 export default function ProjectShowcase(props:DefaultProps){
+    var sizeOf = require('image-size');
+    var dimensions = sizeOf(`public/${props.image_src}`);
+    console.log(dimensions.width-200, dimensions.height-400);
 
     return(
         <>
             <hr/>
             <div className=" flex flex-col h-screen justify-center items-center gap-2 sm:gap-10">
                 <div className=" flex flex-col justify-center items-center gap-2 sm:gap-0">
-                    <h1 className=" font-semibold text-6xl sm:text-4xl">{props.name}</h1>
+                    <h1 className=" font-semibold  text-center text-6xl sm:text-4xl">{props.name}</h1>
                     <a className=" text-lg text-sky-600 underline-offset-4 hover:underline" href={props.url}>Demo</a>
                     <a href={props.github}>
                         <Image
@@ -31,8 +34,8 @@ export default function ProjectShowcase(props:DefaultProps){
                     className=" rounded-md shadow-xl sm:shadow-2xl "
                     src={props.image_src}
                     alt={props.name}
-                    width={1400}
-                    height={600}
+                    width={dimensions.width/1.5}
+                    height={dimensions.height/1.5}
                     priority
                     />
                 </a>
