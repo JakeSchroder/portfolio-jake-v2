@@ -9,8 +9,6 @@ interface DefaultProps{
 export default function ProjectShowcase(props:DefaultProps){
     var sizeOf = require('image-size');
     var dimensions = sizeOf(`public/${props.image_src}`);
-    console.log(dimensions.width-200, dimensions.height-400);
-
     return(
         <>
             <hr/>
