@@ -25,7 +25,7 @@ const projects = [
 ]
 export default function ProjectShowcase(){ 
     return(
-        <div className=" [&>*:nth-child(even)]:bg-neutral-50">
+        <div className=" [&>*:nth-child(odd)]:bg-neutral-50">
             {projects.map((project, index) => {
                 var sizeOf = require('image-size');
                 var dimensions = sizeOf(`public/${project.image_src}`);     
