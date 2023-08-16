@@ -2,38 +2,10 @@
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {EffectCards, Keyboard} from 'swiper/modules';
-import React, { useRef, useState } from 'react';
-
+import {certifications} from '../_lib/constants'
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-//import '/styles.css';
 
-const certifications = [
-    {
-        src:'/certifications/AdvancedReactCert.png',
-        alt:'Advanced React Certification'
-    },
-    {
-        src:'/certifications/FrontEndIntroCert.png',
-        alt:'Introduction to Front-End Development Certification'
-    },
-    {
-        src:'/certifications/JavascriptCert.png',
-        alt:'Programming with JavaScript Certification'
-    },
-    {
-        src:'/certifications/ReactBasicsCert.png',
-        alt:'React Basics Certification'
-    },
-    {
-        src:'/certifications/VersionControlCert.png',
-        alt:'Version Control Certification'
-    },
-    {
-        src:'/certifications/UXDesignCert.png',
-        alt:'Foundations of User Experience (UX) Design Certification'
-    },
-]
 export default function CertificationShowcase(){
     return(
         <div className=' flex flex-col h-screen justify-center gap-10'>
