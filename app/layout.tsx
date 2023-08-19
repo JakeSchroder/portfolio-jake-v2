@@ -19,6 +19,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
+        <script type="text/javascript">{`
+          window._mfq = window._mfq || [];
+          (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.defer = true;
+            mf.src = "//cdn.mouseflow.com/projects/b742853a-d017-469f-be96-b32ae6a5ec7d.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+          })();`}
+        </script>
         <Analytics/>
       </body>
     </html>
